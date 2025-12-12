@@ -1,0 +1,220 @@
+<!-- services.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — ShaVion Technologies</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR (same as index) -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true">
+          <defs><linearGradient id="g2"><stop offset="0" stop-color="#00E5CF"/><stop offset="1" stop-color="#00A6FF"/></linearGradient></defs>
+          <path fill="url(#g2)" d="M12 2l7 3v5c0 5-3.7 9.8-7 12-3.3-2.2-7-7-7-12V5l7-3z"/>
+          <text x="12" y="16" text-anchor="middle" fill="#041029" font-weight="700" font-size="10">S</text>
+        </svg>
+        <div class="brand-text">
+          <span class="company">ShaVion Technologies</span>
+          <span class="tagline">Modern Cyber Defense</span>
+        </div>
+      </a>
+
+      <button id="nav-toggle-2" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span class="hamburger"></span></button>
+
+      <nav id="nav-2" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="btn-ghost">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Services — ShaVion Technologies</h1>
+
+    <!-- Service cards (detailed) -->
+    <section class="service-list">
+      <article class="service">
+        <h2>Web Application VAPT</h2>
+        <p>We simulate real-world attacks on your web applications to identify vulnerabilities before attackers do.</p>
+        <div class="service-columns">
+          <div>
+            <h4>Scope</h4>
+            <ul>
+              <li>OWASP Top 10 checks</li>
+              <li>Business logic testing</li>
+              <li>Authenticated & unauthenticated testing</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tools used</h4>
+            <ul>
+              <li>Burp Suite</li>
+              <li>Nmap</li>
+              <li>Kali Linux</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Executive summary</li>
+              <li>Detailed technical report</li>
+              <li>Remediation guidance</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="service">
+        <h2>Network Security Assessment</h2>
+        <p>External and internal network scans and configuration reviews to reduce attack surface and lateral movement risk.</p>
+        <div class="service-columns">
+          <div>
+            <h4>Scope</h4>
+            <ul>
+              <li>Perimeter scanning</li>
+              <li>Internal network mapping</li>
+              <li>Firewall & ACL review</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tools used</h4>
+            <ul>
+              <li>Nmap</li>
+              <li>Wireshark</li>
+              <li>Custom scripts</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Risk-rated findings</li>
+              <li>Mitigation recommendations</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="service">
+        <h2>SOC Setup &amp; Monitoring</h2>
+        <p>Design, deploy and tune SOC tooling for detection, triage and response with playbook development.</p>
+        <div class="service-columns">
+          <div>
+            <h4>Scope</h4>
+            <ul>
+              <li>SIEM onboarding</li>
+              <li>Alert tuning and runbooks</li>
+              <li>On-call workflows</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tools used</h4>
+            <ul>
+              <li>Splunk</li>
+              <li>Wazuh</li>
+              <li>Elastic Stack</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Deliverables</h4>
+            <ul>
+              <li>SIEM rules & dashboards</li>
+              <li>Runbooks & playbooks</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="service">
+        <h2>Server &amp; Cloud Hardening</h2>
+        <p>System hardening, secure configuration, and cloud security posture review to protect critical infrastructure.</p>
+        <div class="service-columns">
+          <div>
+            <h4>Scope</h4>
+            <ul>
+              <li>OS hardening</li>
+              <li>Cloud IAM review</li>
+              <li>Container security checks</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tools used</h4>
+            <ul>
+              <li>OpenSCAP</li>
+              <li>Cloud consoles</li>
+              <li>Custom hardening scripts</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Configuration checklist</li>
+              <li>Remediation plan</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="service">
+        <h2>Cyber Awareness Training</h2>
+        <p>Custom training sessions and simulated phishing campaigns to raise staff awareness and reduce human risk.</p>
+        <div class="service-columns">
+          <div>
+            <h4>Scope</h4>
+            <ul>
+              <li>Workshops & seminars</li>
+              <li>Simulated phishing</li>
+              <li>Policy review</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tools used</h4>
+            <ul>
+              <li>Training platforms</li>
+              <li>Sim phishing tools</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Attendance & improvement reports</li>
+              <li>Policy templates</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="small-banner">
+      <p>Need a custom security assessment? <a href="contact.html" class="btn">Contact Us</a></p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>ShaVion Technologies</strong>
+        <div class="tagline">Modern Cyber Defense</div>
+      </div>
+      <div>
+        <div>Email: <a href="mailto:shahil@shaviontechnologies.com">shahil@shaviontechnologies.com</a></div>
+        <div>Location: Himachal Pradesh, India</div>
+      </div>
+      <div class="copyright" id="footer-copyright-2"></div>
+    </div>
+  </footer>
+
+  <button id="back-to-top-2" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

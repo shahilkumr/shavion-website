@@ -1,0 +1,150 @@
+/* styles.css */
+/* Global styles for ShaVion Technologies frontend */
+/* Single CSS file used by all pages. Uses system fonts and responsive layout. */
+
+/* ========== VARIABLES ========== */
+:root{
+  --bg:#081029;
+  --card:#0f1a2a;
+  --glass: rgba(255,255,255,0.03);
+  --muted:#9aa8bf;
+  --accent1:#00E5CF;
+  --accent2:#00A6FF;
+  --accent-grad: linear-gradient(90deg,var(--accent1),var(--accent2));
+  --glass-border: rgba(255,255,255,0.04);
+  --radius:14px;
+  --max-width:1200px;
+}
+
+/* ========== BASIC RESET ========== */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,#041027 0%, #071122 60%);
+  color:#E6F0FF;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+/* Container */
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+
+/* HEADER / NAV */
+.site-header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg, rgba(4,16,41,0.6), rgba(4,16,41,0.35));backdrop-filter: blur(6px);border-bottom:1px solid var(--glass-border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:.6rem 0}
+.brand{display:flex;gap:.6rem;align-items:center;text-decoration:none;color:inherit}
+.logo{flex:0 0 auto;border-radius:8px;box-shadow:0 6px 18px rgba(0,165,255,0.06)}
+.brand-text{display:flex;flex-direction:column;line-height:1}
+.company{font-weight:700}
+.tagline{font-size:.75rem;color:var(--muted)}
+
+/* NAV */
+.nav{display:flex}
+.nav ul{display:flex;gap:1rem;align-items:center;margin:0;padding:0;list-style:none}
+.nav a{color:inherit;text-decoration:none;padding:.4rem .6rem;border-radius:8px}
+.nav a:hover{background:rgba(255,255,255,0.03)}
+.btn-ghost{border:1px solid rgba(255,255,255,0.04);padding:.4rem .7rem;border-radius:8px}
+
+/* Mobile toggle */
+.nav-toggle{display:none;background:none;border:0;padding:.4rem}
+.hamburger{display:block;width:22px;height:2px;background:linear-gradient(90deg,var(--accent1),var(--accent2));position:relative}
+.hamburger::before,.hamburger::after{content:"";position:absolute;left:0;height:2px;width:22px;background:linear-gradient(90deg,var(--accent1),var(--accent2))}
+.hamburger::before{top:-7px} .hamburger::after{top:7px}
+
+/* HERO */
+.hero{padding:3rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:1.4rem;align-items:center}
+.hero h1{font-size:2.2rem;margin:.2rem 0}
+.lead{color:var(--muted);font-size:1.05rem;margin-bottom:1rem}
+.hero-cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{background:var(--accent-grad);color:#021025;padding:.7rem 1rem;border-radius:999px;text-decoration:none;font-weight:600;box-shadow:0 8px 30px rgba(0,165,255,0.12)}
+.btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent1)}
+.btn-cta{padding:.85rem 1.2rem}
+
+/* CARDS */
+.section{padding:2rem 0}
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:1rem;border:1px solid var(--glass-border);box-shadow:0 6px 18px rgba(0,0,0,0.45)}
+.card:hover{transform:translateY(-6px);transition:transform .25s}
+
+/* small icon style */
+.card-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:.6rem;color:var(--accent1);background:linear-gradient(135deg, rgba(0,165,255,0.06), rgba(0,229,207,0.03));}
+
+/* badges */
+.certifications .badges, .badges{display:flex;gap:.6rem;flex-wrap:wrap}
+.badge{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:.45rem .6rem;border-radius:999px;border:1px solid var(--glass-border);font-weight:600;color:var(--muted)}
+
+/* timeline */
+.timeline{display:flex;gap:1rem;list-style:none;padding:0;margin:1rem 0;flex-wrap:wrap}
+.timeline li{flex:1 1 180px;padding:1rem;background:var(--glass);border-radius:12px;border:1px solid var(--glass-border);}
+
+/* tools */
+.tools-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.6rem}
+.tool{padding:.6rem;border-radius:8px;text-align:center;background:rgba(255,255,255,0.02);border:1px solid var(--glass-border);font-weight:600;color:var(--muted)}
+
+/* featured offer */
+.featured-offer .offer-card{display:flex;flex-direction:column;gap:.6rem;padding:1.2rem;border-radius:16px;background:linear-gradient(180deg, rgba(0,165,255,0.06), rgba(0,165,255,0.02));border:1px solid rgba(0,165,255,0.12);color:#e9fbff}
+
+/* cta banner */
+.cta-banner{margin-top:1.4rem;padding:1.2rem;border-radius:12px;background:linear-gradient(90deg, rgba(0,165,255,0.06), rgba(0,165,255,0.02));text-align:center;border:1px solid var(--glass-border)}
+
+/* services detail */
+.service{margin:1rem 0;padding:1rem;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid var(--glass-border)}
+.service-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:.8rem}
+
+/* founder */
+.founder-grid{display:flex;gap:1rem;align-items:center}
+
+/* why list */
+.why-list{list-style:disc;margin-left:1.2rem;color:var(--muted)}
+
+/* portfolio */
+.samples{display:flex;gap:.6rem;flex-wrap:wrap}
+.sample{display:inline-block;padding:.8rem 1rem;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid var(--glass-border);text-decoration:none;color:inherit}
+
+/* contact form */
+.contact-grid{display:grid;grid-template-columns:320px 1fr;gap:1rem;align-items:start}
+.contact-info{background:var(--card);padding:1rem;border-radius:12px;border:1px solid var(--glass-border)}
+.contact-form-wrap{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));padding:1rem;border-radius:12px;border:1px solid var(--glass-border)}
+.contact-form-wrap label{display:block;margin-top:.6rem;color:var(--muted)}
+.contact-form-wrap input, .contact-form-wrap textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-top:.3rem}
+.form-actions{margin-top:.8rem}
+#form-status{margin-top:.8rem;min-height:1.2rem;font-weight:600}
+
+/* footer */
+.site-footer{margin-top:2rem;padding:1.2rem 0;border-top:1px solid var(--glass-border);color:var(--muted)}
+.footer-grid{display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap}
+
+/* back to top */
+#back-to-top{position:fixed;right:16px;bottom:16px;background:linear-gradient(90deg,var(--accent1),var(--accent2));border-radius:12px;border:0;padding:.5rem .6rem;color:#021025;display:none;z-index:80}
+
+/* small banner */
+.small-banner{margin:2rem 0;padding:1rem;background:linear-gradient(90deg, rgba(0,165,255,0.04), rgba(0,165,255,0.02));border-radius:10px;text-align:center;border:1px solid var(--glass-border)}
+
+/* responsive */
+@media (max-width: 980px){
+  .hero-grid{grid-template-columns:1fr;gap:1rem}
+  .cards-3{grid-template-columns:repeat(2,1fr)}
+  .tools-grid{grid-template-columns:repeat(3,1fr)}
+  .service-columns{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+}
+
+@media (max-width: 720px){
+  .cards-3{grid-template-columns:1fr}
+  .tools-grid{grid-template-columns:repeat(2,1fr)}
+  .nav{display:none}
+  .nav-toggle{display:block}
+  .nav[aria-hidden="false"]{display:block;position:absolute;left:0;right:0;top:64px;background:linear-gradient(180deg,rgba(4,16,41,0.95),rgba(4,16,41,0.95));padding:1rem;border-bottom:1px solid var(--glass-border)}
+  .nav ul{flex-direction:column;gap:.4rem}
+  .hero h1{font-size:1.6rem}
+  #back-to-top{right:12px;bottom:12px}
+}
+
+/* small utilities */
+.text-muted{color:var(--muted)}
+.req{color:#ff8a8a}
+.active{box-shadow:0 6px 18px rgba(0,165,255,0.08)}

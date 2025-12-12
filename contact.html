@@ -1,0 +1,81 @@
+<!-- contact.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — ShaVion Technologies</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo" width="40" height="40" viewBox="0 0 24 24"><defs><linearGradient id="g5"><stop offset="0" stop-color="#00E5CF"/><stop offset="1" stop-color="#00A6FF"/></linearGradient></defs><path fill="url(#g5)" d="M12 2l7 3v5c0 5-3.7 9.8-7 12-3.3-2.2-7-7-7-12V5l7-3z"/><text x="12" y="16" text-anchor="middle" fill="#041029" font-weight="700" font-size="10">S</text></svg>
+        <div class="brand-text"><span class="company">ShaVion Technologies</span><span class="tagline">Modern Cyber Defense</span></div>
+      </a>
+
+      <button id="nav-toggle-5" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span class="hamburger"></span></button>
+
+      <nav id="nav-5" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active btn-ghost">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section contact-section">
+    <h1>Contact Us</h1>
+    <div class="contact-grid">
+      <aside class="contact-info">
+        <h3>Get in touch</h3>
+        <p>Email: <a href="mailto:shahil@shaviontechnologies.com">shahil@shaviontechnologies.com</a></p>
+        <p>Phone: <a href="tel:+9198765XXXXX">+91-98765XXXXX</a></p>
+        <p>Location: Himachal Pradesh, India</p>
+        <p class="small">Founder: Shahil — CEH Master, EHCSA, SOC Certified</p>
+      </aside>
+
+      <section class="contact-form-wrap">
+        <form id="contact-form" novalidate>
+          <label for="name">Full Name <span class="req">*</span></label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email <span class="req">*</span></label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" />
+
+          <label for="message">Message <span class="req">*</span></label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+
+          <div id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>ShaVion Technologies</strong><div class="tagline">Modern Cyber Defense</div></div>
+      <div><div>Email: <a href="mailto:shahil@shaviontechnologies.com">shahil@shaviontechnologies.com</a></div><div>Location: Himachal Pradesh, India</div></div>
+      <div class="copyright" id="footer-copyright-5"></div>
+    </div>
+  </footer>
+
+  <button id="back-to-top-5" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

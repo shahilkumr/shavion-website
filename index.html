@@ -1,0 +1,186 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShaVion Technologies — Modern Cyber Defense</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR (shared across pages; keep identical copy on every page) -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="ShaVion Technologies Home">
+        <!-- Inline logo: S in shield -->
+        <svg class="logo" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#00E5CF"/>
+              <stop offset="1" stop-color="#00A6FF"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#g1)" d="M12 2l7 3v5c0 5-3.7 9.8-7 12-3.3-2.2-7-7-7-12V5l7-3z"/>
+          <text x="12" y="16" text-anchor="middle" fill="#041029" font-weight="700" font-size="10" font-family="Arial, Helvetica, sans-serif">S</text>
+        </svg>
+        <div class="brand-text">
+          <span class="company">ShaVion Technologies</span>
+          <span class="tagline">Modern Cyber Defense</span>
+        </div>
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="nav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="btn-ghost">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>ShaVion Technologies</h1>
+          <p class="lead">Modern Cyber Defense &amp; VAPT Solutions for startups and small businesses</p>
+          <div class="hero-cta">
+            <a href="contact.html" class="btn">Request Security Audit</a>
+            <a href="services.html" class="btn btn-outline">View Services</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <!-- Technical illustration (SVG) -->
+          <svg viewBox="0 0 300 220" class="hero-svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#00E5CF"/><stop offset="1" stop-color="#00A6FF"/></linearGradient>
+            </defs>
+            <rect x="10" y="20" rx="14" ry="14" width="220" height="160" fill="#061025" stroke="url(#lg)" stroke-width="2"/>
+            <g transform="translate(30,40)" fill="none" stroke="url(#lg)" stroke-width="2">
+              <circle cx="40" cy="40" r="18"/>
+              <path d="M80 20 L120 20 L120 60 L80 60 Z" />
+              <path d="M10 120 L200 120" stroke-dasharray="4 6"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW -->
+    <section class="container section services-overview" id="services-overview">
+      <h2>Core Services</h2>
+      <div class="cards-3">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <!-- magnifier shield -->
+            <svg viewBox="0 0 24 24"><path d="M10 2a8 8 0 1 0 5.3 14.12l4.29 4.3 1.41-1.42-4.28-4.29A8 8 0 0 0 10 2z" fill="none" stroke="currentColor"/></svg>
+          </div>
+          <h3>Web Application VAPT</h3>
+          <p>Comprehensive vulnerability assessment & penetration testing for web apps to protect your users and revenue.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">
+            <!-- network -->
+            <svg viewBox="0 0 24 24"><path d="M3 12h6l4 4 4-8 4 4" fill="none" stroke="currentColor"/></svg>
+          </div>
+          <h3>Network Security Audit</h3>
+          <p>Deep scanning and configuration review to close exposures in your network perimeter and internal segments.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">
+            <!-- SOC -->
+            <svg viewBox="0 0 24 24"><path d="M12 2v6l4 2" fill="none" stroke="currentColor"/></svg>
+          </div>
+          <h3>SOC Setup &amp; Monitoring</h3>
+          <p>Security Operations Center setup, tuning and 24/7 monitoring for actionable alerts and incident response.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="container section certifications">
+      <h2>Certifications & Badges</h2>
+      <div class="badges">
+        <span class="badge">CEH Master</span>
+        <span class="badge">RHCSA</span>
+        <span class="badge">SOC Analyst</span>
+        <span class="badge">CCNA RHCE</span>
+      </div>
+    </section>
+
+    <!-- PROCESS TIMELINE -->
+    <section class="container section process">
+      <h2>Our Process</h2>
+      <ol class="timeline">
+        <li><strong>Reconnaissance</strong><span>Passive & active information gathering</span></li>
+        <li><strong>Scanning &amp; Enumeration</strong><span>Port/service discovery and profiling</span></li>
+        <li><strong>Exploitation &amp; Validation</strong><span>Safe exploitation and evidence collection</span></li>
+        <li><strong>Reporting</strong><span>Executive + technical reports with risk ratings</span></li>
+        <li><strong>Remediation Support</strong><span>Fix guidance and retesting</span></li>
+      </ol>
+    </section>
+
+    <!-- TOOLS / TECH STACK -->
+    <section class="container section tech-grid">
+      <h2>Tools & Technologies</h2>
+      <div class="tools-grid">
+        <div class="tool">Burp Suite</div>
+        <div class="tool">Nmap</div>
+        <div class="tool">Wireshark</div>
+        <div class="tool">Splunk</div>
+        <div class="tool">Wazuh</div>
+        <div class="tool">Kali Linux</div>
+      </div>
+    </section>
+
+    <!-- FEATURED OFFER -->
+    <section class="container section featured-offer">
+      <div class="offer-card">
+        <h3>Website VAPT starting at ₹1499</h3>
+        <p>Limited-time offer for startups & small businesses. Quick, thorough, and affordable.</p>
+        <a href="contact.html" class="btn">Get This Offer</a>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="container cta-banner">
+      <div class="cta-inner">
+        <h3>Ready to secure your product?</h3>
+        <p>Book a security consultation or request an audit today.</p>
+        <a href="contact.html" class="btn btn-cta">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (shared) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>ShaVion Technologies</strong>
+        <div class="tagline">Modern Cyber Defense</div>
+      </div>
+      <div>
+        <div>Email: <a href="mailto:shahil@shaviontechnologies.com">shahil@shaviontechnologies.com</a></div>
+        <div>Location: Himachal Pradesh, India</div>
+      </div>
+      <div class="copyright" id="footer-copyright">
+        <!-- Year injected by script.js -->
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
